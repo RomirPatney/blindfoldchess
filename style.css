@@ -1,0 +1,196 @@
+/* Reset some default browser styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Use a modern, clean font (Montserrat in this example) */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.5)
+  ), 
+  url('https://images.pexels.com/photos/1297437/pexels-photo-1297437.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-section .hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #f0ad4e;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ec971f;
+}
+
+/* Option for a secondary button style (lighter background) */
+.cta-button.secondary {
+  background-color: #6c757d;
+}
+
+.cta-button.secondary:hover {
+  background-color: #5a6268;
+}
+
+/* ===== Features Section ===== */
+.features-section {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.features-section .section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.features-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.features-section p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-box {
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.feature-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* ===== Preview Section ===== */
+.preview-section {
+  padding: 60px 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.preview-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.preview-section p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.preview-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.preview-images img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.ratings-reviews h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #f0ad4e;
+}
+
+.ratings-reviews p {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* ===== CTA Section ===== */
+.cta-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+/* Make sure the site is responsive */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.4rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
